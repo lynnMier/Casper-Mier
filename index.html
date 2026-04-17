@@ -469,7 +469,7 @@ async function send() {
     maybeStoreMemory(text, reply);
 
   } catch (e) {
-    addMessage("❌ " + JSON.stringify(data, null, 2), "bot");
+    addMessage("❌ " + e.message, "bot");
   }
 }
 
